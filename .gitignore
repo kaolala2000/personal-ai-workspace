@@ -1,0 +1,19 @@
+# Secrets and credentials — never commit
+.env
+.env.*
+*.key
+*.pem
+*credential*
+*secret*
+
+# Sync state and raw business data — data stays out of this repo
+state_*.json
+knowledge/raw/
+knowledge/pack/records.jsonl
+knowledge/pack/manifest.json
+*.muse-github-snapshot-sync.json
+
+# Runtime noise
+__pycache__/
+*.pyc
+.DS_Store
